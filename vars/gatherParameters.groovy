@@ -22,6 +22,6 @@ def call(parameters) {
     env.APP_REPLACE_CONFIG_DEV = (parameters.applicationReplaceConfigDev) ? parameters.applicationReplaceConfigDev : "./${env.APP_OPENSHIFT_DIR}/environments/dev/replaceConfig.yaml"
     env.APP_REPLACE_CONFIG_TEST = (parameters.applicationReplaceConfigTest) ? parameters.applicationReplaceConfigTest : "./${env.APP_OPENSHIFT_DIR}/environments/test/replaceConfig.yaml"
     env.APP_REPLACE_CONFIG_PROD = (parameters.applicationReplaceConfigProd) ? parameters.applicationReplaceConfigProd : "./${env.APP_OPENSHIFT_DIR}/environments/prod/replaceConfig.yaml"
-    env.APP_INT_TEST_AGENT = (parameters.applicationIntegrationTestAgent) ? parameters.applicationIntegrationTestAgent : "./${env.APP_OPENSHIFT_DIR}/environments/test/integration-test/int-test.yaml"
-    env.APP_INT_TEST_COMMANDS = (parameters.applicationIntegrationTestCommands) ? parameters.applicationIntegrationTestCommands : "./${env.APP_OPENSHIFT_DIR}/environments/test/integration-test/int-test.groovy"
+    //env.APP_INT_TEST_AGENT = (parameters.applicationIntegrationTestAgent) ? parameters.applicationIntegrationTestAgent : "./${env.APP_OPENSHIFT_DIR}/environments/test/integration-test/int-test.yaml"
+    //env.APP_INT_TEST_COMMANDS = (parameters.applicationIntegrationTestCommands) ? parameters.applicationIntegrationTestCommands : "./${env.APP_OPENSHIFT_DIR}/environments/test/integration-test/int-test.groovy"
 }
