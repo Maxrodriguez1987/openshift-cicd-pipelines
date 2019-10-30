@@ -84,7 +84,7 @@ def call(parameters) {
                                 tag: env.TAG_NAME)
                 }
             }
-            stage("Integration Test") {
+            /*stage("Integration Test") {
                 agent {
                     kubernetes {
                         cloud "openshift"
@@ -98,7 +98,7 @@ def call(parameters) {
 
                     load env.APP_INT_TEST_COMMANDS
                 }
-            }
+            }*/
             stage("Deploy PROD (Blue)") {
                 steps {
                     script {
