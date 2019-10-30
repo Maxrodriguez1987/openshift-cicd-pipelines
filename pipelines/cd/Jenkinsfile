@@ -3,5 +3,4 @@ runCDPipeline(application: env.APP_NAME,
               compileCommands: "",
               testCommands: "",
               artifactsDir: "",
-              integrationTestAgent: "",
               integrationTestCommands: "")
