@@ -1,11 +1,11 @@
 #!/usr/bin/env groovy
 
 def getApplication1Name(application) {
-    return "${application}"
+    return "${application}-1"
 }
 
 def getApplication2Name(application) {
-    return "${application}"
+    return "${application}-2"
 }
 
 def existsBlueGreenRoute(parameters) {
